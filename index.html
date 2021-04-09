@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta http-equiv="Content-Style-Type" content="text/css">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="author" content="Masaru Kitajima">
+    <meta name="robots" content="noindex, nofollow">
+    <title>Analize colors used in Bootstrap 4.5</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>とりあえずBootStrap 4.5について調べる</h1>
+    </header>
+    <div>
+        <div>
+            <h2>Named Colors</h2>
+            <dl>
+                <dt>blue</dt>
+                <dt><span id="blue">#007bff</span></dt>
+            </dl>
+            <dl>
+                <dt>indigo</dt>
+                <dt><span id="indigo">#6610f2</span></dt>
+            </dl>
+            <dl>
+                <dt>purple</dt>
+                <dt><span id="purple">#6f42c1</span></dt>
+            </dl>
+            <dl>
+                <dt>pink</dt>
+                <dt><span id="pink">#e83e8c</span></dt>
+            </dl>
+            <dl>
+                <dt>red</dt>
+                <dt><span id="red">#dc3545</span></dt>
+            </dl>
+            <dl>
+                <dt>orange</dt>
+                <dt><span id="orange">#fd7e14</span></dt>
+            </dl>
+            <dl>
+                <dt>yellow</dt>
+                <dt><span id="yellow">#ffc107</span></dt>
+            </dl>
+            <dl>
+                <dt>green</dt>
+                <dt><span id="green">#28a745</span></dt>
+            </dl>
+            <dl>
+                <dt>teal</dt>
+                <dt><span id="teal">#20c997</span></dt>
+            </dl>
+            <dl>
+                <dt>cyan</dt>
+                <dt><span id="cyan">#17a2b8</span></dt>
+            </dl>
+        </div>
+        <div>
+            <h2>Conversions</h2>
+            <div>
+                <h3>RGB</h3>
+                <table class="color_table">
+                    <tr>
+                        <th class="red">Red</th>
+                        <th class="green">Green</th>
+                        <th class="blue">Blue</th>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="blue_rgb_r"></span></td>
+                        <td><span class="green" id="blue_rgb_g"></span></td>
+                        <td><span id="blue_rgb_b"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="indigo_rgb_r"></span></td>
+                        <td><span class="green" id="indigo_rgb_g"></span></td>
+                        <td><span id="indigo_rgb_b"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="purple_rgb_r"></span></td>
+                        <td><span class="green" class="green" id="purple_rgb_g"></span></td>
+                        <td><span id="purple_rgb_b"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="pink_rgb_r"></span></td>
+                        <td><span class="green" id="pink_rgb_g"></span></td>
+                        <td><span id="pink_rgb_b"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="red_rgb_r"></span></td>
+                        <td><span class="green" id="red_rgb_g"></span></td>
+                        <td><span id="red_rgb_b"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="orange_rgb_r"></span></td>
+                        <td><span class="green" id="orange_rgb_g"></span></td>
+                        <td><span id="orange_rgb_b"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="yellow_rgb_r"></span></td>
+                        <td><span class="green" id="yellow_rgb_g"></span></td>
+                        <td><span id="yellow_rgb_b"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="green_rgb_r"></span></td>
+                        <td><span class="green" id="green_rgb_g"></span></td>
+                        <td><span id="green_rgb_b"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="teal_rgb_r"></span></td>
+                        <td><span class="green" id="teal_rgb_g"></span></td>
+                        <td><span id="teal_rgb_b"></span></td>
+                    </tr>
+                    <tr>
+                        <td><span class="red" id="cyan_rgb_r"></span></td>
+                        <td><span class="green" id="cyan_rgb_g"></span></td>
+                        <td><span id="cyan_rgb_b"></span></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <address>Copyright &copy;2021 Masaru Kitajima</address>
+    </footer>
+    <!-- Bootstrap -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Chroma.js -->
+    <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.1.1/chroma.min.js" integrity="sha256-zrX+w9KzegZgZbpMj12SIOGBDke8eQvjsJbvawX8PBs=" crossorigin="anonymous"></script>
+    <script>
+        $(function() {
+            var namedIdAry = {
+                "blue": "#blue",
+                "indigo": "#indigo",
+                "purple": "#purple",
+                "pink": "#pink",
+                "red": "#red",
+                "orange": "#orange",
+                "yellow": "#yellow",
+                "green": "#green",
+                "teal": "#teal",
+                "cyan": "#cyan"
+            };
+        });
+    </script>
+</body>
+
+</html>

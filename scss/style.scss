@@ -1,0 +1,51 @@
+html {
+    font-size: 1em;
+}
+
+body {
+    margin: 20px;
+    color: Navy;
+    background-color: AliceBlue;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+.color_table {
+    border-collapse: collapse;
+    th, td {
+        border: solid 1px black;
+    }
+    th {
+        text-align: center;
+        font-size: 1.25rem;
+        background-color: LightBlue;
+        color: darkblue;
+    }
+    td {
+        text-align: right;
+        font-size: 1.25rem;
+        background-color: #e0ffff;
+    }
+}
+
+.red {
+    color: #af0000 ;
+}
+
+.green {
+    color: #006400;
+}
+
+.blue {
+    color: #0000ff;
+}
