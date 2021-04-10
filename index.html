@@ -26,43 +26,43 @@
             <h2>Named Colors</h2>
             <dl>
                 <dt>blue</dt>
-                <dt><span id="blue">#007bff</span></dt>
+                <dt><span id="blue"></span></dt>
             </dl>
             <dl>
                 <dt>indigo</dt>
-                <dt><span id="indigo">#6610f2</span></dt>
+                <dt><span id="indigo"></span></dt>
             </dl>
             <dl>
                 <dt>purple</dt>
-                <dt><span id="purple">#6f42c1</span></dt>
+                <dt><span id="purple"></span></dt>
             </dl>
             <dl>
                 <dt>pink</dt>
-                <dt><span id="pink">#e83e8c</span></dt>
+                <dt><span id="pink"></span></dt>
             </dl>
             <dl>
                 <dt>red</dt>
-                <dt><span id="red">#dc3545</span></dt>
+                <dt><span id="red"></span></dt>
             </dl>
             <dl>
                 <dt>orange</dt>
-                <dt><span id="orange">#fd7e14</span></dt>
+                <dt><span id="orange"></span></dt>
             </dl>
             <dl>
                 <dt>yellow</dt>
-                <dt><span id="yellow">#ffc107</span></dt>
+                <dt><span id="yellow"></span></dt>
             </dl>
             <dl>
                 <dt>green</dt>
-                <dt><span id="green">#28a745</span></dt>
+                <dt><span id="green"></span></dt>
             </dl>
             <dl>
                 <dt>teal</dt>
-                <dt><span id="teal">#20c997</span></dt>
+                <dt><span id="teal"></span></dt>
             </dl>
             <dl>
                 <dt>cyan</dt>
-                <dt><span id="cyan">#17a2b8</span></dt>
+                <dt><span id="cyan"></span></dt>
             </dl>
         </div>
         <div>
@@ -140,18 +140,79 @@
     <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.1.1/chroma.min.js" integrity="sha256-zrX+w9KzegZgZbpMj12SIOGBDke8eQvjsJbvawX8PBs=" crossorigin="anonymous"></script>
     <script>
         $(function() {
-            var namedIdAry = {
-                "blue": "#blue",
-                "indigo": "#indigo",
-                "purple": "#purple",
-                "pink": "#pink",
-                "red": "#red",
-                "orange": "#orange",
-                "yellow": "#yellow",
-                "green": "#green",
-                "teal": "#teal",
-                "cyan": "#cyan"
+            // Gray Scale
+            var white = '#fff';
+            var gray_100 = '#f8f9fa';
+            var gray_200 = '#e9ecef';
+            var gray_300 = '#dee2e6';
+            var gray_400 = '#ced4da';
+            var gray_500 = '#adb5bd';
+            var gray_600 = '#6c757d';
+            var gray_700 = '#495057';
+            var gray_800 = '#343a40';
+            var gray_900 = '#212529';
+            var black = '#000';
+            // Gray Scale Array
+            var grayArray = {
+                100: gray_100,
+                200: gray_200,
+                300: gray_300,
+                400: gray_400,
+                500: gray_500,
+                600: gray_600,
+                700: gray_700,
+                800: gray_800,
+                900: gray_900
             };
+            // Default colors
+            var blue = '#007bff';
+            var indigo = '#6610f2';
+            var purple = '#6f42c1';
+            var pink = '#e83e8c';
+            var red = '#dc3545';
+            var orange = '#fd7e14';
+            var yellow = '#ffc107';
+            var green = '#28a745';
+            var teal = '#20c997';
+            var cyan = '#17a2b8';
+            // Default Color Array
+            var colorArray = {
+                "blue": blue,
+                "indigo": indigo,
+                "purple": purple,
+                "pink": pink,
+                "red": red,
+                "orange": orange,
+                "yellow": yellow,
+                "green": green,
+                "teal": teal,
+                "cyan": cyan
+            };
+            // theme colors
+            var primary = blue;
+            var secondary = gray_600;
+            var success = green;
+            var info = cyan;
+            var warning = yellow;
+            var danger = red;
+            var light = gray_100;
+            var dark = gray_800;
+            // theme color Array
+            var themeArray = {
+                "primary": primary,
+                "secondary": secondary,
+                "success": success,
+                "info": info,
+                "warning": warning,
+                "danger": danger,
+                "light": light,
+                "dark": dark
+            };
+            Object.keys(colorArray).forEach(function(key) {
+                var val = this[key];
+                var elementID = '#' + key;
+                $(elementID).html = val;
+            });
         });
     </script>
 </body>
