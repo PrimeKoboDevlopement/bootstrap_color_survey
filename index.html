@@ -141,77 +141,38 @@
     <script>
         $(function() {
             // Gray Scale
-            var white = '#fff';
-            var gray_100 = '#f8f9fa';
-            var gray_200 = '#e9ecef';
-            var gray_300 = '#dee2e6';
-            var gray_400 = '#ced4da';
-            var gray_500 = '#adb5bd';
-            var gray_600 = '#6c757d';
-            var gray_700 = '#495057';
-            var gray_800 = '#343a40';
-            var gray_900 = '#212529';
-            var black = '#000';
+            var white = "fff";
+            var black = "000";
             // Gray Scale Array
             var grayArray = {
-                100: gray_100,
-                200: gray_200,
-                300: gray_300,
-                400: gray_400,
-                500: gray_500,
-                600: gray_600,
-                700: gray_700,
-                800: gray_800,
-                900: gray_900
+                100: "f8f9fa",
+                200: "e9ecef",
+                300: "dee2e6",
+                400: "ced4da",
+                500: "adb5bd",
+                600: "6c757d",
+                700: "495057",
+                800: "343a40",
+                900: "212529"
             };
-            // Default colors
-            var blue = '#007bff';
-            var indigo = '#6610f2';
-            var purple = '#6f42c1';
-            var pink = '#e83e8c';
-            var red = '#dc3545';
-            var orange = '#fd7e14';
-            var yellow = '#ffc107';
-            var green = '#28a745';
-            var teal = '#20c997';
-            var cyan = '#17a2b8';
             // Default Color Array
             var colorArray = {
-                "blue": blue,
-                "indigo": indigo,
-                "purple": purple,
-                "pink": pink,
-                "red": red,
-                "orange": orange,
-                "yellow": yellow,
-                "green": green,
-                "teal": teal,
-                "cyan": cyan
+                blue: "007bff",
+                indigo: "6610f2",
+                purple: "6f42c1",
+                pink: "e83e8c",
+                red: "dc3545",
+                orange: "fd7e14",
+                yellow: "ffc107",
+                green: "28a745",
+                teal: "20c997",
+                cyan: "17a2b8"
             };
-            // theme colors
-            var primary = blue;
-            var secondary = gray_600;
-            var success = green;
-            var info = cyan;
-            var warning = yellow;
-            var danger = red;
-            var light = gray_100;
-            var dark = gray_800;
-            // theme color Array
-            var themeArray = {
-                "primary": primary,
-                "secondary": secondary,
-                "success": success,
-                "info": info,
-                "warning": warning,
-                "danger": danger,
-                "light": light,
-                "dark": dark
-            };
-            Object.keys(colorArray).forEach(function(key) {
-                var val = this[key];
-                var elementID = '#' + key;
-                $(elementID).html = val;
+            // デフォルトカラーの値をその色で表示する。
+            Object.keys(colorArray).forEach(name => {
+                var id = '#' + name;
+                $(id).css("color", '#' + colorArray[name]);
+                $(id).text('#' + colorArray[name]);
             });
         });
     </script>
