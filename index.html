@@ -173,6 +173,8 @@
                 var id = '#' + name;
                 $(id).css("color", '#' + colorArray[name]);
                 $(id).text('#' + colorArray[name]);
+                var blue_rgb_rgb = chroma(colorArray[name]).rgb();
+                console.log(blue_rgb_rgb);
             });
         });
     </script>
