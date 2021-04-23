@@ -23,8 +23,8 @@
     </header>
     <div>
         <div>
-            <h2>Default Colors</h2>
-            <table>
+            <h3>Default Colors</h3>
+            <table class="color_table">
                 <tr>
                     <th>blue</th>
                     <th>indigo</th>
@@ -156,7 +156,7 @@
             const keys = Object.keys(colorArray);
             keys.forEach(key => {
                 var hex = colorArray[key];
-                var id = '.default > .' + key;
+                var id = '.default .' + key;
                 var col = '#' + hex;
                 $(id).css("color", col);
                 $(id).text(col);

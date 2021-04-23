@@ -17,12 +17,16 @@ h2 {
 }
 
 h3 {
+    color: darkblue;
+    border-left: medium ridge dodgerblue;
+    border-bottom: medium ridge dodgerblue;
     font-size: 1.5rem;
 }
 
 .color_table {
     border-collapse: collapse;
-    th, td {
+    th,
+    td {
         border: solid 1px black;
     }
     th {
@@ -39,7 +43,7 @@ h3 {
 }
 
 .red {
-    color: #af0000 ;
+    color: #af0000;
 }
 
 .green {
