@@ -23,33 +23,56 @@ h3 {
     font-size: 1.5rem;
 }
 
-.color_table {
+.default {
     border-collapse: collapse;
-    th,
+    border-spacing: 0;
     td {
-        border: solid 1px black;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        overflow: hidden;
+        padding: 0;
+        //Instead of the line below you could use @include word-break($value)
+        word-break: normal;
     }
     th {
-        text-align: center;
-        font-size: 1.25rem;
-        background-color: LightBlue;
-        color: darkblue;
+        border-color: black;
+        border-style: solid;
+        border-width: 1px;
+        font-family: Arial, sans-serif;
+        font-size: 14px;
+        font-weight: normal;
+        overflow: hidden;
+        padding: 0;
+        //Instead of the line below you could use @include word-break($value)
+        word-break: normal;
     }
-    td {
+    .cell_color_space {
+        color: #00d2cb;
         text-align: right;
-        font-size: 1.25rem;
-        background-color: #e0ffff;
+        vertical-align: middle;
     }
-}
-
-.red {
-    color: #af0000;
-}
-
-.green {
-    color: #006400;
-}
-
-.blue {
-    color: #0000ff;
+    .cell_single_value {
+        color: #32cb00;
+        text-align: right;
+        vertical-align: middle;
+    }
+    .cell_color_name {
+        background-color: #9698ed;
+        color: #ecf4ff;
+        text-align: center;
+        vertical-align: middle;
+    }
+    .row_title {
+        background-color: #cbcefb;
+        color: #343434;
+        text-align: center;
+        vertical-align: middle
+    }
+    .cell_rawspan {
+        text-align: left;
+        vertical-align: middle;
+    }
 }

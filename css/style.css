@@ -23,33 +23,54 @@ h3 {
   font-size: 1.5rem;
 }
 
-.color_table {
+.default {
   border-collapse: collapse;
+  border-spacing: 0;
 }
-.color_table th,
-.color_table td {
-  border: solid 1px black;
+.default td {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  overflow: hidden;
+  padding: 0;
+  word-break: normal;
 }
-.color_table th {
-  text-align: center;
-  font-size: 1.25rem;
-  background-color: LightBlue;
-  color: darkblue;
+.default th {
+  border-color: black;
+  border-style: solid;
+  border-width: 1px;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  font-weight: normal;
+  overflow: hidden;
+  padding: 0;
+  word-break: normal;
 }
-.color_table td {
+.default .cell_color_space {
+  color: #00d2cb;
   text-align: right;
-  font-size: 1.25rem;
-  background-color: #e0ffff;
+  vertical-align: middle;
 }
-
-.red {
-  color: #af0000;
+.default .cell_single_value {
+  color: #32cb00;
+  text-align: right;
+  vertical-align: middle;
 }
-
-.green {
-  color: #006400;
+.default .cell_color_name {
+  background-color: #9698ed;
+  color: #ecf4ff;
+  text-align: center;
+  vertical-align: middle;
 }
-
-.blue {
-  color: #0000ff;
+.default .row_title {
+  background-color: #cbcefb;
+  color: #343434;
+  text-align: center;
+  vertical-align: middle;
+}
+.default .cell_rawspan {
+  text-align: left;
+  vertical-align: middle;
 }
