@@ -152,28 +152,22 @@
                 teal: "teal_rgb_b",
                 cyan: "cyan_rgb_b"
             };
+            var defaultColord = Array();
             // デフォルトカラーの値をその色で表示する。
-            const keys = Object.keys(colorArray);
-            keys.forEach(key => {
-                var hex = colorArray[key];
-                var id = '.default .' + key;
-                var col = '#' + hex;
-                $(id).css("color", col);
-                $(id).text(col);
-                /*
-                var chromaVal = chroma(id);
-                var rgb = chromaVal.rgb();
-                var rgb_name_id = '#' + rgbRedNameArray[key];
-                var rgb_r_id = '#' + rgbRedArray[namkeye];
-                var rgb_g_id = '#' + rgbGreenArray[key];
-                var rgb_b_id = '#' + rgbBlueArray[key];
-                $(rgb_name_id).css("color", '#' + colorArray[name]);
-                $(rgb_name_id).text(key);
-                $(rgb_r_id).text(rgb[0]);
-                $(rgb_g_id).text(rgb[1]);
-                $(rgb_b_id).text(rgb[2]);
-                */
-            });
+            function defaultDisplay() {
+                const keys = Object.keys(colorArray);
+                keys.forEach(key => {
+                    var hex = colorArray[key];
+                    var id = '.default .' + key;
+                    var col = '#' + hex;
+                    $(id).css("color", col);
+                    $(id).text(col);
+                    defaultColord[key] = chroma(col);
+                });
+            };
+
+            // デフォルトカラーを表示
+            defaultDisplay();
         });
     </script>
 </body>
