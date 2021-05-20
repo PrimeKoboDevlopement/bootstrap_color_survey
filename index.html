@@ -71,69 +71,58 @@
                 <h3>RGB</h3>
                 <table class="color_table">
                     <tr>
-                        <th>Name</th>
-                        <th>Red</th>
-                        <th>Green</th>
-                        <th>Blue</th>
+                        <th class="red">Red</th>
+                        <th class="green">Green</th>
+                        <th class="blue">Blue</th>
                     </tr>
                     <tr>
-                        <td><span id="blue_rgb"></span></td>
-                        <td><span id="blue_rgb_r"></span></td>
-                        <td><span id="blue_rgb_g"></span></td>
+                        <td><span class="red" id="blue_rgb_r"></span></td>
+                        <td><span class="green" id="blue_rgb_g"></span></td>
                         <td><span id="blue_rgb_b"></span></td>
                     </tr>
                     <tr>
-                        <td><span id="indigo_rgb"></span></td>
-                        <td><span id="indigo_rgb_r"></span></td>
-                        <td><span id="indigo_rgb_g"></span></td>
+                        <td><span class="red" id="indigo_rgb_r"></span></td>
+                        <td><span class="green" id="indigo_rgb_g"></span></td>
                         <td><span id="indigo_rgb_b"></span></td>
                     </tr>
                     <tr>
-                        <td><span id="purple_rgb"></span></td>
-                        <td><span id="purple_rgb_r"></span></td>
-                        <td><span id="purple_rgb_g"></span></td>
+                        <td><span class="red" id="purple_rgb_r"></span></td>
+                        <td><span class="green" class="green" id="purple_rgb_g"></span></td>
                         <td><span id="purple_rgb_b"></span></td>
                     </tr>
                     <tr>
-                        <td><span id="pink_rgb"></span></td>
-                        <td><span id="pink_rgb_r"></span></td>
-                        <td><span id="pink_rgb_g"></span></td>
+                        <td><span class="red" id="pink_rgb_r"></span></td>
+                        <td><span class="green" id="pink_rgb_g"></span></td>
                         <td><span id="pink_rgb_b"></span></td>
                     </tr>
                     <tr>
-                        <td><span id="red_rgb"></span></td>
-                        <td><span id="red_rgb_r"></span></td>
-                        <td><span id="red_rgb_g"></span></td>
+                        <td><span class="red" id="red_rgb_r"></span></td>
+                        <td><span class="green" id="red_rgb_g"></span></td>
                         <td><span id="red_rgb_b"></span></td>
                     </tr>
                     <tr>
-                        <td><span id="orange_rgb"></span></td>
-                        <td><span id="orange_rgb_r"></span></td>
-                        <td><span id="orange_rgb_g"></span></td>
+                        <td><span class="red" id="orange_rgb_r"></span></td>
+                        <td><span class="green" id="orange_rgb_g"></span></td>
                         <td><span id="orange_rgb_b"></span></td>
                     </tr>
                     <tr>
-                        <td><span id="yellow_rgb"></span></td>
-                        <td><span id="yellow_rgb_r"></span></td>
-                        <td><span id="yellow_rgb_g"></span></td>
+                        <td><span class="red" id="yellow_rgb_r"></span></td>
+                        <td><span class="green" id="yellow_rgb_g"></span></td>
                         <td><span id="yellow_rgb_b"></span></td>
                     </tr>
                     <tr>
-                        <td><span id="green_rgb"></span></td>
-                        <td><span id="green_rgb_r"></span></td>
-                        <td><span id="green_rgb_g"></span></td>
+                        <td><span class="red" id="green_rgb_r"></span></td>
+                        <td><span class="green" id="green_rgb_g"></span></td>
                         <td><span id="green_rgb_b"></span></td>
                     </tr>
                     <tr>
-                        <td><span id="teal_rgb"></span></td>
-                        <td><span id="teal_rgb_r"></span></td>
-                        <td><span id="teal_rgb_g"></span></td>
+                        <td><span class="red" id="teal_rgb_r"></span></td>
+                        <td><span class="green" id="teal_rgb_g"></span></td>
                         <td><span id="teal_rgb_b"></span></td>
                     </tr>
                     <tr>
-                        <td><span id="cyan_rgb"></span></td>
-                        <td><span id="cyan_rgb_r"></span></td>
-                        <td><span id="cyan_rgb_g"></span></td>
+                        <td><span class="red" id="cyan_rgb_r"></span></td>
+                        <td><span class="green" id="cyan_rgb_g"></span></td>
                         <td><span id="cyan_rgb_b"></span></td>
                     </tr>
                 </table>
@@ -166,91 +155,25 @@
                 800: "343a40",
                 900: "212529"
             };
-            // Default Color Array
-            var colorArray = {
-                blue: "007bff",
-                indigo: "6610f2",
-                purple: "6f42c1",
-                pink: "e83e8c",
-                red: "dc3545",
-                orange: "fd7e14",
-                yellow: "ffc107",
-                green: "28a745",
-                teal: "20c997",
-                cyan: "17a2b8"
+            var bsColors = {
+                "blue": "#007bff",
+                "indigo": "#6610f2",
+                "purple": "#6f42c1",
+                "pink": "#e83e8c",
+                "red": "#dc3545",
+                "orange": "#fd7e14",
+                "yellow": "#ffc107",
+                "green": "#28a745",
+                "teal": "#20c997",
+                "cyan": "#17a2b8"
             };
-            var rgbRedNameArray = {
-                blue: "blue_rgb",
-                indigo: "indigo_rgb",
-                purple: "purple_rgb",
-                pink: "pink_rgb",
-                red: "red_rgb",
-                orange: "orange_rgb",
-                yellow: "yellow_rgb",
-                green: "green_rgb",
-                teal: "teal_rgb",
-                cyan: "cyan_rgb"
-            };
-            var rgbRedArray = {
-                blue: "blue_rgb_r",
-                indigo: "indigo_rgb_r",
-                purple: "purple_rgb_r",
-                pink: "pink_rgb_r",
-                red: "red_rgb_r",
-                orange: "orange_rgb_r",
-                yellow: "yellow_rgb_r",
-                green: "green_rgb_r",
-                teal: "teal_rgb_r",
-                cyan: "cyan_rgb_r"
-            };
-            var rgbGreenArray = {
-                blue: "blue_rgb_g",
-                indigo: "indigo_rgb_g",
-                purple: "purple_rgb_g",
-                pink: "pink_rgb_g",
-                red: "red_rgb_g",
-                orange: "orange_rgb_g",
-                yellow: "yellow_rgb_g",
-                green: "green_rgb_g",
-                teal: "teal_rgb_g",
-                cyan: "cyan_rgb_g"
-            };
-            var rgbBlueArray = {
-                blue: "blue_rgb_b",
-                indigo: "indigo_rgb_b",
-                purple: "purple_rgb_b",
-                pink: "pink_rgb_b",
-                red: "red_rgb_b",
-                orange: "orange_rgb_b",
-                yellow: "yellow_rgb_b",
-                green: "green_rgb_b",
-                teal: "teal_rgb_b",
-                cyan: "cyan_rgb_b"
-            };
-            // デフォルトカラーの値をその色で表示する。
-            const keys = Object.keys(colorArray);
-            keys.forEach(key => {
-                var hex = colorArray[key];
-                console.log('key=> ' + key);
-                console.log('hex=> ' + hex);
-                var id = '#' + key;
-                var col = '#' + hex;
-                $(id).css("color", col);
-                $(id).text(col);
-                /*
-                var chromaVal = chroma(id);
-                var rgb = chromaVal.rgb();
-                var rgb_name_id = '#' + rgbRedNameArray[key];
-                var rgb_r_id = '#' + rgbRedArray[namkeye];
-                var rgb_g_id = '#' + rgbGreenArray[key];
-                var rgb_b_id = '#' + rgbBlueArray[key];
-                $(rgb_name_id).css("color", '#' + colorArray[name]);
-                $(rgb_name_id).text(key);
-                $(rgb_r_id).text(rgb[0]);
-                $(rgb_g_id).text(rgb[1]);
-                $(rgb_b_id).text(rgb[2]);
-                */
-            });
+
+            for (var name in bsColors) {
+                var tempId = '#' + name;
+                console.log(tempId);
+                console.log(bsColors[name]);
+                $(tempId).text(bsColors[name]);
+            }
         });
     </script>
 </body>
