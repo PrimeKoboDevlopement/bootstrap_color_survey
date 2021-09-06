@@ -22,7 +22,8 @@ h3 {
 
 .color_table {
     border-collapse: collapse;
-    th, td {
+    th,
+    td {
         border: solid 1px black;
     }
     th {
@@ -36,16 +37,4 @@ h3 {
         font-size: 1.25rem;
         background-color: #e0ffff;
     }
-}
-
-.red {
-    color: #af0000 ;
-}
-
-.green {
-    color: #006400;
-}
-
-.blue {
-    color: #0000ff;
 }

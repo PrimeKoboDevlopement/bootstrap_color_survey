@@ -11,7 +11,7 @@
     <meta name="format-detection" content="telephone=no">
     <meta name="author" content="Masaru Kitajima">
     <meta name="robots" content="noindex, nofollow">
-    <title>Analize colors used in Bootstrap 4.5</title>
+    <title>Analize colors used in Bootstrap 5</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link href="css/normalize.css" rel="stylesheet" type="text/css">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -19,113 +19,87 @@
 
 <body>
     <header>
-        <h1>とりあえずBootStrap 4.5について調べる</h1>
+        <h1>Color Differences of Bootstrap 5</h1>
     </header>
     <div>
         <div>
-            <h2>Named Colors</h2>
-            <dl>
-                <dt>blue</dt>
-                <dt><span id="blue"></span></dt>
-            </dl>
-            <dl>
-                <dt>indigo</dt>
-                <dt><span id="indigo"></span></dt>
-            </dl>
-            <dl>
-                <dt>purple</dt>
-                <dt><span id="purple"></span></dt>
-            </dl>
-            <dl>
-                <dt>pink</dt>
-                <dt><span id="pink"></span></dt>
-            </dl>
-            <dl>
-                <dt>red</dt>
-                <dt><span id="red"></span></dt>
-            </dl>
-            <dl>
-                <dt>orange</dt>
-                <dt><span id="orange"></span></dt>
-            </dl>
-            <dl>
-                <dt>yellow</dt>
-                <dt><span id="yellow"></span></dt>
-            </dl>
-            <dl>
-                <dt>green</dt>
-                <dt><span id="green"></span></dt>
-            </dl>
-            <dl>
-                <dt>teal</dt>
-                <dt><span id="teal"></span></dt>
-            </dl>
-            <dl>
-                <dt>cyan</dt>
-                <dt><span id="cyan"></span></dt>
-            </dl>
+            <h2>Blue</h2>
+            <span id="blue"></span>
+            <div>
+                <h3>Distance</h3>
+                <span id="blue_distance"></span>
+            </div>
         </div>
         <div>
-            <h2>Conversions</h2>
+            <h2>Indigo</h2>
+            <span id="indigo"></span>
             <div>
-                <h3>RGB</h3>
-                <table class="color_table">
-                    <tr>
-                        <th class="red">Red</th>
-                        <th class="green">Green</th>
-                        <th class="blue">Blue</th>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="blue_rgb_r"></span></td>
-                        <td><span class="green" id="blue_rgb_g"></span></td>
-                        <td><span id="blue_rgb_b"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="indigo_rgb_r"></span></td>
-                        <td><span class="green" id="indigo_rgb_g"></span></td>
-                        <td><span id="indigo_rgb_b"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="purple_rgb_r"></span></td>
-                        <td><span class="green" class="green" id="purple_rgb_g"></span></td>
-                        <td><span id="purple_rgb_b"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="pink_rgb_r"></span></td>
-                        <td><span class="green" id="pink_rgb_g"></span></td>
-                        <td><span id="pink_rgb_b"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="red_rgb_r"></span></td>
-                        <td><span class="green" id="red_rgb_g"></span></td>
-                        <td><span id="red_rgb_b"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="orange_rgb_r"></span></td>
-                        <td><span class="green" id="orange_rgb_g"></span></td>
-                        <td><span id="orange_rgb_b"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="yellow_rgb_r"></span></td>
-                        <td><span class="green" id="yellow_rgb_g"></span></td>
-                        <td><span id="yellow_rgb_b"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="green_rgb_r"></span></td>
-                        <td><span class="green" id="green_rgb_g"></span></td>
-                        <td><span id="green_rgb_b"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="teal_rgb_r"></span></td>
-                        <td><span class="green" id="teal_rgb_g"></span></td>
-                        <td><span id="teal_rgb_b"></span></td>
-                    </tr>
-                    <tr>
-                        <td><span class="red" id="cyan_rgb_r"></span></td>
-                        <td><span class="green" id="cyan_rgb_g"></span></td>
-                        <td><span id="cyan_rgb_b"></span></td>
-                    </tr>
-                </table>
+                <h3>Distance</h3>
+                <span id="indigo_distance"></span>
+            </div>
+        </div>
+        <div>
+            <h2>Purple</h2>
+            <span id="purple"></span>
+            <div>
+                <h3>Distance</h3>
+                <span id="purple_distance"></span>
+            </div>
+        </div>
+        <div>
+            <h2>Pink</h2>
+            <span id="pink"></span>
+            <div>
+                <h3>Distance</h3>
+                <span id="pink_distance"></span>
+            </div>
+        </div>
+        <div>
+            <h2>Red</h2>
+            <span id="red"></span>
+            <div>
+                <h3>Distance</h3>
+                <span id="red_distance"></span>
+            </div>
+        </div>
+        <div>
+            <h2>Orange</h2>
+            <span id="orange"></span>
+            <div>
+                <h3>Distance</h3>
+                <span id="orange_distance"></span>
+            </div>
+        </div>
+        <div>
+            <h2>Yellow</h2>
+            <span id="yellow"></span>
+            <div>
+                <h3>Distance</h3>
+                <span id="yellow_distance"></span>
+            </div>
+        </div>
+        <div>
+            <h2>Green</h2>
+            <span id="green"></span>
+            <div>
+                <h3>Distance</h3>
+                <span id="green_distance"></span>
+            </div>
+        </div>
+        <div>
+            <h2>Teal</h2>
+            <span id="teal"></span>
+            <div>
+                <h3>Distance</h3>
+                <span id="teal_distance"></span>
+            </div>
+        </div>
+        <div>
+            <h2>Cyan</h2>
+            <span id="cyan"></span>
+            <div>
+                <h3>Distance</h3>
+                <span id="cyan_distance"></span>
             </div>
         </div>
     </div>
@@ -155,24 +129,20 @@
                 800: "343a40",
                 900: "212529"
             };
-            var bsColors = {
-                "blue": "#007bff",
-                "indigo": "#6610f2",
-                "purple": "#6f42c1",
-                "pink": "#e83e8c",
-                "red": "#dc3545",
-                "orange": "#fd7e14",
-                "yellow": "#ffc107",
-                "green": "#28a745",
-                "teal": "#20c997",
-                "cyan": "#17a2b8"
-            };
-
-            for (var name in bsColors) {
-                var tempId = '#' + name;
-                console.log(tempId);
-                console.log(bsColors[name]);
-                $(tempId).text(bsColors[name]);
+            var bsColorNames = ["blue", "indigo", "purple", "pink", "red", "orange", "yellow", "green", "teal", "cyan"];
+            var bsColors = ["#0d6efd", "#6610f2", "#6f42c1", "#d63384", "#dc3545", "#fd7e14", "#ffc107", "#198754", "#20c997", "#0dcaf0"];
+            for (var i = 0; i < bsColorNames.length; i++) {
+                var tgtHexId = "#" + bsColorNames[i];
+                $(tgtHexId).css("background-color", bsColors[i]);
+                $(tgtHexId).css("color", chroma(bsColors[i]).luminance() > 0.5 ? black : white);
+                $(tgtHexId).text(bsColors[i]);
+                j = i + 1;
+                if (j >= bsColorNames.length) {
+                    j = 0;
+                }
+                var tgtDistanceId = "#" + bsColorNames[i] + "_distance";
+                var distance = chroma.distance(bsColors[i], bsColors[j], 'rgb');
+                $(tgtDistanceId).text(distance.toFixed(2));
             }
         });
     </script>

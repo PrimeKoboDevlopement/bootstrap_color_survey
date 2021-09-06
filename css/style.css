@@ -1,39 +1,43 @@
 html {
-  font-size: 1em; }
+  font-size: 1em;
+}
 
 body {
   margin: 20px;
   color: Navy;
-  background-color: AliceBlue; }
+  background-color: AliceBlue;
+}
 
 h1 {
-  font-size: 2rem; }
+  font-size: 2rem;
+}
 
 h2 {
-  font-size: 1.75rem; }
+  font-size: 1.75rem;
+}
 
 h3 {
-  font-size: 1.5rem; }
+  font-size: 1.5rem;
+}
 
 .color_table {
-  border-collapse: collapse; }
-  .color_table th, .color_table td {
-    border: solid 1px black; }
-  .color_table th {
-    text-align: center;
-    font-size: 1.25rem;
-    background-color: LightBlue;
-    color: darkblue; }
-  .color_table td {
-    text-align: right;
-    font-size: 1.25rem;
-    background-color: #e0ffff; }
+  border-collapse: collapse;
+}
 
-.red {
-  color: #af0000; }
+.color_table th,
+.color_table td {
+  border: solid 1px black;
+}
 
-.green {
-  color: #006400; }
+.color_table th {
+  text-align: center;
+  font-size: 1.25rem;
+  background-color: LightBlue;
+  color: darkblue;
+}
 
-.blue {
-  color: #0000ff; }
+.color_table td {
+  text-align: right;
+  font-size: 1.25rem;
+  background-color: #e0ffff;
+}
