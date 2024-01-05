@@ -2,67 +2,185 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta http-equiv="Content-Style-Type" content="text/css">
-    <meta name="format-detection" content="telephone=no">
-    <meta name="author" content="Masaru Kitajima">
-    <meta name="robots" content="noindex, nofollow">
-    <title>Analize colors used in Bootstrap 4.5</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link href="css/normalize.css" rel="stylesheet" type="text/css">
-    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <meta http-equiv="Content-Style-Type" content="text/css" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="author" content="Masaru Kitajima" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Analize colors used in Bootstrap 5.3.2</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+    <link href="css/normalize.css" rel="stylesheet" type="text/css" />
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
     <header>
-        <h1>とりあえずBootStrap 4.5について調べる</h1>
+        <h1>とりあえずBootStrap 5.3.2について調べる</h1>
     </header>
+    <!--
+        Bootstrap 5.3.2 _variable.css
+        white = "#fff";
+gray-100 = "#f8f9fa";
+gray-200 = "#e9ecef";
+gray-300 = "#dee2e6";
+gray-400 = "#ced4da";
+gray-500 = "#adb5bd";
+gray-600 = "#6c757d";
+gray-700 = "#495057";
+gray-800 = "#343a40";
+gray-900 = "#212529";
+
+black = "#000";
+blue = "#0d6efd";
+indigo = "#6610f2";
+purple = "#6f42c1";
+pink = "#d63384";
+red = "#dc3545";
+orange = "#fd7e14";
+yellow = "#ffc107";
+green = "#198754";
+teal = "#20c997";
+cyan = "#0dcaf0";
+
+min-contrast-ratio = 40.5;
+
+primary = blue;
+secondary = gray-600;
+success = green;
+info = cyan;
+warning = yellow;
+danger = red;
+light = gray-100;
+dark = gray-900;
+
+namedcolors-100 = tint-color(namedcolors, 0.8);
+namedcolors-200 = tint-color(namedcolors, 0.6);
+namedcolors-300 = tint-color(namedcolors, 0.4);
+namedcolors-400 = tint-color(namedcolors, 0.2);
+namedcolors-500 = namedcolors;
+namedcolors-600 = shade-color(namedcolors, 0.2);
+namedcolors-700 = shade-color(namedcolors, 0.4);
+namedcolors-800 = shade-color(namedcolors, 0.6);
+namedcolors-900 = shade-color(namedcolors, 0.8);
+
+primary-text-emphasis = shade-color(primary, 0.6);
+secondary-text-emphasis = shade-color(secondary, 0.6);
+success-text-emphasis = shade-color(success, 0.6);
+info-text-emphasis = shade-color(info, 0.6);
+warning-text-emphasis = shade-color(warning, 0.6);
+danger-text-emphasis = shade-color(danger, 0.6);
+light-text-emphasis = gray-700;
+dark-text-emphasis = gray-700;
+
+body-color = gray-900;
+body-bg = white;
+body-secondary-color = rgba(body-color, 0.75);
+body-secondary-bg = gray-200;
+body-tertiary-color = rgba(body-color, 0.5);
+body-tertiary-bg = gray-100;
+body-emphasis-color = black;
+
+
+link-color = primary;
+link-shade-percentage = 0.2;
+link-hover-color = shift-color(link-color, link-shade-percentage);
+    -->
     <div>
         <div>
             <h2>Named Colors</h2>
             <dl>
                 <dt>blue</dt>
-                <dt><span id="blue"></span></dt>
+                <dt>
+
+                    <span id="blue">
+
+                    </span>
+                </dt>
             </dl>
             <dl>
                 <dt>indigo</dt>
-                <dt><span id="indigo"></span></dt>
+                <dt>
+
+                    <span id="indigo">
+
+                    </span>
+                </dt>
             </dl>
             <dl>
                 <dt>purple</dt>
-                <dt><span id="purple"></span></dt>
+                <dt>
+
+                    <span id="purple">
+
+                    </span>
+                </dt>
             </dl>
             <dl>
                 <dt>pink</dt>
-                <dt><span id="pink"></span></dt>
+                <dt>
+
+                    <span id="pink">
+
+                    </span>
+                </dt>
             </dl>
             <dl>
                 <dt>red</dt>
-                <dt><span id="red"></span></dt>
+                <dt>
+
+                    <span id="red">
+
+                    </span>
+                </dt>
             </dl>
             <dl>
                 <dt>orange</dt>
-                <dt><span id="orange"></span></dt>
+                <dt>
+
+                    <span id="orange">
+
+                    </span>
+                </dt>
             </dl>
             <dl>
                 <dt>yellow</dt>
-                <dt><span id="yellow"></span></dt>
+                <dt>
+
+                    <span id="yellow">
+
+                    </span>
+                </dt>
             </dl>
             <dl>
                 <dt>green</dt>
-                <dt><span id="green"></span></dt>
+                <dt>
+
+                    <span id="green">
+
+                    </span>
+                </dt>
             </dl>
             <dl>
                 <dt>teal</dt>
-                <dt><span id="teal"></span></dt>
+                <dt>
+
+                    <span id="teal">
+
+                    </span>
+                </dt>
             </dl>
             <dl>
                 <dt>cyan</dt>
-                <dt><span id="cyan"></span></dt>
+                <dt>
+
+                    <span id="cyan">
+
+                    </span>
+                </dt>
             </dl>
         </div>
         <div>
@@ -76,54 +194,204 @@
                         <th class="blue">Blue</th>
                     </tr>
                     <tr>
-                        <td><span class="red" id="blue_rgb_r"></span></td>
-                        <td><span class="green" id="blue_rgb_g"></span></td>
-                        <td><span id="blue_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="blue_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" id="blue_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="blue_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><span class="red" id="indigo_rgb_r"></span></td>
-                        <td><span class="green" id="indigo_rgb_g"></span></td>
-                        <td><span id="indigo_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="indigo_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" id="indigo_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="indigo_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><span class="red" id="purple_rgb_r"></span></td>
-                        <td><span class="green" class="green" id="purple_rgb_g"></span></td>
-                        <td><span id="purple_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="purple_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" class="green" id="purple_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="purple_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><span class="red" id="pink_rgb_r"></span></td>
-                        <td><span class="green" id="pink_rgb_g"></span></td>
-                        <td><span id="pink_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="pink_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" id="pink_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="pink_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><span class="red" id="red_rgb_r"></span></td>
-                        <td><span class="green" id="red_rgb_g"></span></td>
-                        <td><span id="red_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="red_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" id="red_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="red_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><span class="red" id="orange_rgb_r"></span></td>
-                        <td><span class="green" id="orange_rgb_g"></span></td>
-                        <td><span id="orange_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="orange_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" id="orange_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="orange_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><span class="red" id="yellow_rgb_r"></span></td>
-                        <td><span class="green" id="yellow_rgb_g"></span></td>
-                        <td><span id="yellow_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="yellow_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" id="yellow_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="yellow_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><span class="red" id="green_rgb_r"></span></td>
-                        <td><span class="green" id="green_rgb_g"></span></td>
-                        <td><span id="green_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="green_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" id="green_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="green_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><span class="red" id="teal_rgb_r"></span></td>
-                        <td><span class="green" id="teal_rgb_g"></span></td>
-                        <td><span id="teal_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="teal_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" id="teal_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="teal_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                     <tr>
-                        <td><span class="red" id="cyan_rgb_r"></span></td>
-                        <td><span class="green" id="cyan_rgb_g"></span></td>
-                        <td><span id="cyan_rgb_b"></span></td>
+                        <td>
+
+                            <span class="red" id="cyan_rgb_r">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span class="green" id="cyan_rgb_g">
+
+                            </span>
+                        </td>
+                        <td>
+
+                            <span id="cyan_rgb_b">
+
+                            </span>
+                        </td>
                     </tr>
                 </table>
             </div>
@@ -133,43 +401,18 @@
         <address>Copyright &copy;2021 Masaru Kitajima</address>
     </footer>
     <!-- Bootstrap -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <!-- Chroma.js -->
-    <script src="https://cdn.jsdelivr.net/npm/chroma-js@2.1.1/chroma.min.js" integrity="sha256-zrX+w9KzegZgZbpMj12SIOGBDke8eQvjsJbvawX8PBs=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/chroma-js/2.4.2/chroma.min.js" integrity="sha512-zInFF17qBFVvvvFpIfeBzo7Tj7+rQxLeTJDmbxjBz5/zIr89YVbTNelNhdTT+/DCrxoVzBeUPVFJsczKbB7sew==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script>
-        $(function() {
-            // Gray Scale
-            var white = "fff";
-            var black = "000";
-            // Gray Scale Array
-            var grayArray = {
-                100: "f8f9fa",
-                200: "e9ecef",
-                300: "dee2e6",
-                400: "ced4da",
-                500: "adb5bd",
-                600: "6c757d",
-                700: "495057",
-                800: "343a40",
-                900: "212529"
-            };
-            var bsColors = {
-                "blue": "#007bff",
-                "indigo": "#6610f2",
-                "purple": "#6f42c1",
-                "pink": "#e83e8c",
-                "red": "#dc3545",
-                "orange": "#fd7e14",
-                "yellow": "#ffc107",
-                "green": "#28a745",
-                "teal": "#20c997",
-                "cyan": "#17a2b8"
-            };
-
+        $(function () {
+            // TODO:
+            // Bootstrapの色を変数化してChroma.jsで調査する
+            // 特に各色の間の相関関係
             for (var name in bsColors) {
-                var tempId = '#' + name;
+                var tempId = "#" + name;
                 console.log(tempId);
                 console.log(bsColors[name]);
                 $(tempId).text(bsColors[name]);
