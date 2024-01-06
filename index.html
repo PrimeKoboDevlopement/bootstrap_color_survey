@@ -5,8 +5,8 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-    <meta name="description" content="" />
-    <meta name="keywords" content="" />
+    <meta name="description" content />
+    <meta name="keywords" content />
     <meta http-equiv="Content-Style-Type" content="text/css" />
     <meta name="format-detection" content="telephone=no" />
     <meta name="author" content="Masaru Kitajima" />
@@ -34,17 +34,7 @@ gray-700 = "#495057";
 gray-800 = "#343a40";
 gray-900 = "#212529";
 
-black = "#000";
-blue = "#0d6efd";
-indigo = "#6610f2";
-purple = "#6f42c1";
-pink = "#d63384";
-red = "#dc3545";
-orange = "#fd7e14";
-yellow = "#ffc107";
-green = "#198754";
-teal = "#20c997";
-cyan = "#0dcaf0";
+
 
 min-contrast-ratio = 40.5;
 
@@ -92,96 +82,63 @@ link-hover-color = shift-color(link-color, link-shade-percentage);
     <div>
         <div>
             <h2>Named Colors</h2>
-            <dl>
-                <dt>blue</dt>
-                <dt>
-
-                    <span id="blue">
-
-                    </span>
-                </dt>
-            </dl>
-            <dl>
-                <dt>indigo</dt>
-                <dt>
-
-                    <span id="indigo">
-
-                    </span>
-                </dt>
-            </dl>
-            <dl>
-                <dt>purple</dt>
-                <dt>
-
-                    <span id="purple">
-
-                    </span>
-                </dt>
-            </dl>
-            <dl>
-                <dt>pink</dt>
-                <dt>
-
-                    <span id="pink">
-
-                    </span>
-                </dt>
-            </dl>
-            <dl>
-                <dt>red</dt>
-                <dt>
-
-                    <span id="red">
-
-                    </span>
-                </dt>
-            </dl>
-            <dl>
-                <dt>orange</dt>
-                <dt>
-
-                    <span id="orange">
-
-                    </span>
-                </dt>
-            </dl>
-            <dl>
-                <dt>yellow</dt>
-                <dt>
-
-                    <span id="yellow">
-
-                    </span>
-                </dt>
-            </dl>
-            <dl>
-                <dt>green</dt>
-                <dt>
-
-                    <span id="green">
-
-                    </span>
-                </dt>
-            </dl>
-            <dl>
-                <dt>teal</dt>
-                <dt>
-
-                    <span id="teal">
-
-                    </span>
-                </dt>
-            </dl>
-            <dl>
-                <dt>cyan</dt>
-                <dt>
-
-                    <span id="cyan">
-
-                    </span>
-                </dt>
-            </dl>
+            <table>
+                <thead>
+                    <tr>
+                        <th colspan="2">Basic Info</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>name</td>
+                        <td>hex</td>
+                    </tr>
+                    <tr>
+                        <td>black</td>
+                        <td>#000</td>
+                    </tr>
+                    <tr>
+                        <td>blue</td>
+                        <td>#0d6efd</td>
+                    </tr>
+                    <tr>
+                        <td>indigo</td>
+                        <td>#6610f2</td>
+                    </tr>
+                    <tr>
+                        <td>purple</td>
+                        <td>#6f42c1</td>
+                    </tr>
+                    <tr>
+                        <td>pink</td>
+                        <td>#d63384</td>
+                    </tr>
+                    <tr>
+                        <td>red</td>
+                        <td>#dc3545</td>
+                    </tr>
+                    <tr>
+                        <td>orange</td>
+                        <td>#fd7e14</td>
+                    </tr>
+                    <tr>
+                        <td>yellow</td>
+                        <td>#ffc107</td>
+                    </tr>
+                    <tr>
+                        <td>green</td>
+                        <td>#198754</td>
+                    </tr>
+                    <tr>
+                        <td>teal</td>
+                        <td>#20c997</td>
+                    </tr>
+                    <tr>
+                        <td>cyan</td>
+                        <td>#0dcaf0</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
         <div>
             <h2>Conversions</h2>
@@ -411,10 +368,22 @@ link-hover-color = shift-color(link-color, link-shade-percentage);
             // TODO:
             // Bootstrapの色を変数化してChroma.jsで調査する
             // 特に各色の間の相関関係
+            let bsColors = {
+                'black': '#000',
+                'blue': '#0d6efd',
+                'indigo': '#6610f2',
+                'purple': '#6f42c1',
+                'pink': '#d63384',
+                'red': '#dc3545',
+                'orange': '#fd7e14',
+                'yellow': '#ffc107',
+                'green': '#198754',
+                'teal': '#20c997',
+                'cyan': '#0dcaf0'
+            };
+
             for (var name in bsColors) {
                 var tempId = "#" + name;
-                console.log(tempId);
-                console.log(bsColors[name]);
                 $(tempId).text(bsColors[name]);
             }
         });
